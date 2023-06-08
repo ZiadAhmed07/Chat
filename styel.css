@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#ChatBoot{
+    width: 400px;
+    height: 500px;
+    background-color: #f8f8f8;
+    color: black;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-family: sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+#ChatBoot header{
+    background-color: #2065aa;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ChatBoot header h1{
+    font-size: 28px;
+}
+
+#ChatBoot main{
+    width: 100%;
+    height: calc(100% - 90px);
+    padding: 20px;
+    overflow-y: auto;
+}
+#ChatBoot main div{
+ margin-bottom: 20px;
+}
+#ChatBoot main .myChat{
+    display: flex;
+    justify-content: end;
+}
+#ChatBoot main .myChat p{
+    background-color: #2065aa;
+    padding: 5px 15px;
+    border-radius: 10px 10px 0px 10px;
+    display: inline;
+    color: white;
+    min-width: 50px;
+    max-width: 200px;
+
+}
+#ChatBoot main .youChat p{
+    background-color: #d8d8d8;
+    padding: 5px 15px;
+    border-radius: 10px 10px 10px 0px;
+    display: inline;
+    color: #000000;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+#ChatBoot footer{
+    height: 40px;
+}
+#ChatBoot footer form{
+    display: flex;
+    flex-direction: row;
+}
+#ChatBoot footer #text{
+    width: calc(100% - 50px);
+    height: 40px;
+    border: none;
+    text-align: start;
+    outline: none;
+    padding: 20px;
+    color: #2065aa;
+    font-weight: bold;
+    font-size: 14px;
+}
+#ChatBoot footer #sub{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    background-color: #2065aa;
+    color: white;
+    border: none;
+}
+#ChatBoot footer #sub:active{
+    background-color: #194f85;
+}
+
+
+@media(max-width:450px){
+    #ChatBoot{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
+
+
+
